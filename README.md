@@ -42,4 +42,4 @@ Les fichiers de configuration pour chaque périphérique sont disponibles dans l
 
 ## Auteur
 
-[Votre Nom/Pseudo GitHub]-NG
+halrich-Moutongo/TP-EVE-NG 
