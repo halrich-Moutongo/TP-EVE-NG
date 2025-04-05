@@ -1,1 +1,26 @@
-
+----------------POUR LAN A-----------------------
+Router(config)#ip dhcp pool LAN A
+Router(dhcp-config)#network 192.168.10.0 255.255.255.0
+Router(dhcp-config)#default-router 192.168.10.1
+Router(dhcp-config)#dns-server 8.8.8.8 8.8.4.4
+Router(dhcp-config)#do wr
+Building configuration...
+[OK]
+Router(dhcp-config)#
+*Apr  5 20:00:21.334: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Apr  5 20:00:22.414: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+Router(dhcp-config)#end
+Router#
+----------------POUR LAN B-----------------------
+Router(config)#ip dhcp pool LAN A
+Router(dhcp-config)#network 192.168.20.0 255.255.255.0
+Router(dhcp-config)#default-router 192.168.20.1
+Router(dhcp-config)#dns-server 8.8.8.8 8.8.4.4
+Router(dhcp-config)#do wr
+Building configuration...
+[OK]
+Router(dhcp-config)#
+*Apr  5 20:00:21.334: %GRUB-5-CONFIG_WRITING: GRUB configuration is being updated on disk. Please wait...
+*Apr  5 20:00:22.414: %GRUB-5-CONFIG_WRITTEN: GRUB configuration was written to disk successfully.
+Router(dhcp-config)#end
+Router#
